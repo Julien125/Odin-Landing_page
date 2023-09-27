@@ -1,0 +1,232 @@
+body{
+    font-family: Roboto, sans-serif;
+    margin:0
+}
+
+.navbar{
+    color:#f9faf8;
+    height:50px;
+    padding-top: 0;
+}
+
+.navbar ul {
+     flex-wrap: nowrap;
+     justify-content: space-around;
+     align-items: center;
+     list-style-type: none;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    color: #e5e7eb;
+}
+
+#logo{
+    width: 50%;
+    font-size: 24px;
+}
+
+#HeroSection { 
+    display: flex;
+    padding: 4rem 2rem;
+    position: relative;
+    height: auto;
+    margin-top: 5rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#HeroSection > div { 
+    flex: 1;
+    display: flex;
+    align-items: left;
+    padding: 0 2rem;
+}
+
+.heroLeft {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1.WhiteColorText {
+    font-size: 3rem; /* Augmenter la taille de la police du titre */
+    margin-bottom: 1rem;
+    text-align: left; /* Assurer que le titre est aligné à gauche */
+}
+
+.lightColorText {
+    color: #a8a8a8;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#HeroImage {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 100%; /* Augmenter la taille maximale de l'image */
+}
+
+.darkBackground {
+    background-color: #1f2937;
+}
+
+.WhiteColorText {
+    color: #f9faf8;
+}
+
+
+
+#HeroImage {
+    height: 225px;
+    width: 100%;
+    display: block;
+    margin-left: 25%
+}
+
+.info-section {
+    background-color: white;
+    text-align: center; /* Center the h2 */
+    padding: 3rem; /* Padding around the section */
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 800; /* Extrabold */
+    color: #1f2937;
+    margin-bottom: 2rem; /* Spacing between the h2 and the cards */
+}
+
+.card-container {
+    display: flex; /* Cards displayed side by side */
+    justify-content: center; /* Horizontally center the cards */
+    gap: 5rem; /* Spacing between the cards */
+}
+
+.card {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr auto; /* One fraction for the illustration and auto size for the text */
+    gap: 1rem; /* Spacing between the illustration and text */
+    align-items: center;
+    width: 150px; /* Adjust as per design requirement */
+}
+
+.illustration {
+    width: 100%;
+    background-color: #f3f4f6;
+    border: 2px solid #3882f6;
+    aspect-ratio: 1 / 1;
+    border-radius: 15px;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    padding: 3rem 1rem; /* Adding some vertical and horizontal padding */
+    text-align: center; /* Centering the blockquote */
+}
+
+blockquote {
+    display: inline-block; /* Makes the blockquote behave like an inline element while still allowing block-level properties */
+    text-align: left; /* Aligns the content of blockquote to the left */
+    max-width: 800px; /* Adjust this value according to your design preference */
+    width: 100%; /* Ensures it takes full width up to the max-width */
+}
+
+blockquote p {
+    font-size: 36px;
+    font-style: italic; /* Making the text italic */
+    font-weight: 300; /* Making the text light */
+    color: #1f2937;
+    margin: 0; /* Removing default margin */
+    margin-bottom: 1rem; /* Spacing between the quote and the author */
+}
+
+blockquote cite {
+    font-size: 24px; /* You can adjust this size as you see fit */
+    color: #1f2937;
+    display: block;
+    text-align: right; /* Makes the cite element block-level, so it occupies its own line */
+}
+.cta-section {
+    background-color: white;
+    /* Adjust the padding values to control the whitespace. 
+       The 1st value controls the vertical space and the 2nd controls the horizontal space. */
+    padding: 3rem 2rem; 
+}
+
+.cta-container {
+    background-color: #3882f6;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    width: calc(100% - 20rem); /* Subtract the horizontal padding applied to .cta-section */
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content:space-between;
+}
+
+.cta-text h3 {
+    font-weight: bold;
+    color: white; /* White color text inside the blue rectangle */
+    margin: 0; /* Remove default margin */
+    margin-bottom: 1rem; /* Spacing between the header and paragraph */
+}
+
+.cta-text p {
+    color: white; /* White color text inside the blue rectangle */
+    margin: 0; /* Remove default margin */
+}
+
+
+
+.secondarybutton:hover {
+    background-color: #6692eb; /* Slight grayish color on hover for feedback */
+}
+.primarybutton:hover {
+    background-color: #2a6fd4;
+}
+
+
+
+.button{
+    display: inline;
+    font-weight: 400;
+    text-align: Center;
+    white-space: nowrap;
+    padding: 18px 32px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    border: 1px solid;
+    cursor: pointer;
+    border-color: #3882f6;
+    background-color: #3882f6;
+    font-weight: bold;
+
+}
+
+.secondarybutton {
+    color: white;
+    border: 2px solid white; 
+    transition: background-color 0.3s;
+}
+
+.primarybutton {
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
